@@ -250,9 +250,10 @@ footer{
     -webkit-overflow-scrolling:touch;
 }
 .main-bar{
-    color:#484848;
+    color:#FD780F;
     line-height: 0.34rem;
     padding:0.32rem 0 0 0.28rem;
+    font-size: 0.28rem;
 }
 .item{
     display: flex;
