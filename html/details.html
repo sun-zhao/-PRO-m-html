@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>方案详情</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video-js.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/proStyle.css" />
     <script type="text/javascript">
         document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
@@ -13,7 +14,11 @@
     <div class="article-box">
         <p class="article-title">关于夏至关于那天 | 致敬周杰伦复古文艺短片</p>
         <p>适合人数：6-8人 节目时长：3分钟</p>
-        <p class="img-auto"><img src="../images/3.png"></p>
+        <div class="video-box relative">
+            <video id="example_video_1" class="video-js vjs-default-skin relative" controls preload="none" width="100%" poster="../images/3.png">
+                <source src="https://blz-videos.nosdn.127.net/1/HearthStone/f6cd63b590d416821d3e27e0.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="article-info article-hidden">
             <p>节目描述：这是一支极具唐代风情的古典舞服装和音乐配合一致一眼醉芳情的古典舞服装和音乐配合一致一眼醉芳容，一抿一笑尽风情。舞蹈演员们的精彩演绎带你感受盛唐的厚重唯美与古韵文化舞</p>
             <span class="txt-cover"></span>
@@ -30,6 +35,7 @@
     </div>
 </body>
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js"></script>
 <script>
     $(function () {
         var $txt_more = $('.txt-more'),
@@ -40,6 +46,16 @@
             }else{
                 $article_info.addClass('article-hidden');
             }
+        });
+        var player = videojs('example_video_1',{
+            muted: false,
+            controls : true,
+            loop : false
+        });
+        var player = videojs('example_video_2',{
+            muted: false,
+            controls : true,
+            loop : false
         });
     });
 </script>
