@@ -1,0 +1,473 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.4.1
+2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: "PingFang SC";
+    font-size:0.24rem;
+}
+
+:focus {
+    outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+em,font,span{font-style: normal;}
+input, select {
+    vertical-align:middle;
+}
+.img-auto img{
+    display: block;
+    max-width: 100%;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.block{
+    display: block;
+}
+/*clear*/
+.clear {
+    clear: both;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1
+}
+/*list*/
+header{
+    width:100%;
+    height:3.07rem;
+    background-image: url("../images/top-bg.png");
+    background-size: cover;
+    color:#fff;
+}
+header p{
+    padding-left:0.45rem;
+    line-height:0.4rem;
+    font-size:0.28rem;
+}
+.list-title{
+    padding:0.7rem 0 0.3rem 0.45rem;
+    font-size:0.36rem;
+}
+header p:last-child{
+    font-size:0.24rem;
+    padding-top:0.06rem;
+}
+header p .num{
+    font-size:0.36rem;
+    padding:0 0.12rem;
+    font-weight: 500;
+}
+.icon{
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width:0.4rem;
+    height:0.4rem;
+    background-size: cover;
+    vertical-align: bottom;
+}
+.icon-plan{
+    height:0.44rem;
+    background-image: url("../images/icon-plan.png");
+    margin-right:0.1rem;
+}
+.icon-video{
+    width:0.56rem;
+    height:0.56rem;
+    background-image: url("../images/icon-video.png");
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:-0.28rem 0 0 -0.28rem;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 3.07rem;
+    bottom:1.68rem;
+}
+footer{
+    height:1.64rem;
+    background: #fff;
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.VerticalNav{
+    width:1.3rem;
+    background: #F7F7F7;
+    position: absolute;
+    top:0;
+    bottom:0;
+}
+.VerticalNav span{
+    display: block;
+    height:1.04rem;
+    line-height:1.04rem;
+    font-size:0.24rem;
+    color:#828282;
+    text-align: center;
+}
+.VerticalNav span.active{
+    color:#FD780F;
+    background: #fff;
+}
+.VerticalMain{
+    position: absolute;
+    left:1.3rem;
+    top:0;
+    bottom:0;
+    right:0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling:touch;
+}
+.main-bar{
+    color:#484848;
+    line-height: 0.34rem;
+    padding:0.32rem 0 0 0.28rem;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    margin:0 0.32rem;
+    padding:0.52rem 0;
+    border-bottom:1px solid #EFEDEC;
+}
+.item .item-mask{
+    width: 2.32rem;
+    height:1.36rem;
+    background-size: cover;
+    border-radius:0.1rem;
+    overflow: hidden;
+    position:relative;
+    margin:0 0.2rem;
+}
+.item.star-item .item-mask{
+    width: 1.2rem;
+    height:1.6rem;
+}
+.star-item{
+    background: url("../images/Vector.png") no-repeat center right;
+    background-size: 0.12rem;
+}
+.star-item .text-hidden{
+    width:3.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top:0.08rem;
+}
+.item .item-info{
+    color:#828282;
+    font-size:0.2rem;
+    line-height: 0.24rem;
+}
+.item .item-info p{
+    margin-bottom:0.04rem;
+    line-height: 0.3rem;
+}
+.item-info p.info-title{
+    height:0.72rem;
+    font-size:0.26rem;
+    color:#111111;
+    line-height:0.36rem;
+    margin-bottom:0.12rem;
+}
+.star-item p.info-title{
+    height:auto;
+    margin-bottom:0.24rem;
+}
+.label-box{
+    height:1.36rem;
+    display: flex;
+    align-items: center;
+}
+.star-item .label-box{
+    height:1.6rem;
+}
+.star-item p{
+    font-size:0.22rem;
+}
+.item .checkbox{
+    width: 0.32rem;
+    height:0.32rem;
+    border-radius:50%;
+    border: 1px solid #EFEDEC;
+    align-items: center;
+    vertical-align: middle;
+}
+.item .checkbox.checked{
+    width: 0.36rem;
+    height:0.36rem;
+    border:0;
+    background: url("../images/icon-checked.png");
+    background-size: cover;
+    border-radius:initial;
+}
+.item .checkbox input{
+    opacity: 0;
+}
+/*button*/
+.flex-direction {
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+}
+.padding{
+    padding:0.32rem;
+}
+.pro-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    outline: 0;
+    border:0;
+    border-radius: 0.16rem;
+    color: #fff;
+}
+.confirm{
+    height:1.04rem;
+    font-size:0.34rem;
+    background: #FD780F;
+}
+.disabled{
+    background: #FFE4CF;
+}
+
+/*details*/
+.article-box{
+    padding:0.6rem 0.32rem 0 0.32rem;
+    -webkit-overflow-scrolling: touch;
+}
+.article-box .img-auto{
+    margin-bottom: 0.4rem;
+}
+.article-title{
+    font-size:0.48rem;
+    line-height:0.68rem;
+    color:#111;
+    font-weight:500;
+}
+.article-title + p{
+    color:#828282;
+    font-size:0.26rem;
+    line-height: 0.36rem;
+    font-weight: 400;
+    margin-top:0.24rem;
+    margin-bottom:0.52rem;
+}
+.article-info{
+    margin-top:0.52rem;
+    margin-bottom:0.36rem;
+    color:#635F5D;
+    font-size:0.28rem;
+    line-height: 0.4rem;
+    position: relative;
+    text-align: justify;
+}
+.txt-cover{
+    width: 0.94rem;
+    height:0.28rem;
+    background: url("../images/txt-cover.png");
+    background-size: cover;
+    position: absolute;
+    bottom: 0.06rem;
+    right: 0.88rem;
+    display: none;
+}
+.txt-more{
+    display: block;
+    line-height: 0.28rem;
+    background: #fff;
+    color: #FD780F;
+    text-align: right;
+}
+.txt-more em{
+    display: none;
+}
+.article-hidden{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.article-hidden .txt-more{
+    display: inline-block;
+    width: 0.94rem;
+    height:0.28rem;
+    font-size: 0.28rem;
+    position: absolute;
+    right:0;
+    bottom:0.06rem;
+}
+.article-hidden .txt-cover{
+    display: inline-block;
+}
+.txt-more span.open{
+    display: none;
+}
+.txt-more span.close,.article-hidden .txt-more span.open,.article-hidden .txt-more em{
+    display: inline;
+}
+.article-hidden .txt-more span.close{
+    display: none;
+}
+.tags-box{
+    margin-bottom:0.56rem;
+    display: flex;
+    flex-direction: row;
+}
+.tag{
+    display: inline-block;
+    height: 0.44rem;
+    padding:0 0.16rem;
+    color:#635F5D;
+    font-size:0.24rem;
+    line-height: 0.44rem;
+    margin-right:0.2rem;
+    border-radius:0.04rem;
+    background: #F7F7F7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

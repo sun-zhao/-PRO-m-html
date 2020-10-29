@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>方案详情</title>
+    <link rel="stylesheet" href="../css/proStyle.css" />
+    <script type="text/javascript">
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+    <div class="article-box">
+        <p class="article-title">关于夏至关于那天 | 致敬周杰伦复古文艺短片</p>
+        <p>适合人数：6-8人 节目时长：3分钟</p>
+        <p class="img-auto"><img src="../images/3.png"></p>
+        <div class="article-info article-hidden">
+            <p>节目描述：这是一支极具唐代风情的古典舞服装和音乐配合一致一眼醉芳情的古典舞服装和音乐配合一致一眼醉芳容，一抿一笑尽风情。舞蹈演员们的精彩演绎带你感受盛唐的厚重唯美与古韵文化舞</p>
+            <span class="txt-cover"></span>
+            <span class="txt-more"><em>...</em><span class="open">展开</span><span class="close">收起</span></span>
+        </div>
+        <div class="tags-box">
+            <span class="tag">科技感</span>
+            <span class="tag">红色/革命</span>
+            <span class="tag">性感</span>
+            <span class="tag">动感时尚</span>
+            <span class="tag">美丽</span>
+        </div>
+        <p class="img-auto"><img src="../images/2.png"></p>
+    </div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    $(function () {
+        var $txt_more = $('.txt-more'),
+            $article_info = $('.article-info');
+        $txt_more.click(function () {
+            if($article_info.hasClass('article-hidden')){
+                $article_info.removeClass('article-hidden');
+            }else{
+                $article_info.addClass('article-hidden');
+            }
+        });
+    });
+</script>
+</html>
