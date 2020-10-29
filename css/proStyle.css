@@ -580,6 +580,9 @@ footer{
 .video-box{
     margin-bottom: 0.4rem;
 }
+.video-box video{
+    background-size:cover;
+}
 .video-box:last-child,.photo-list .img-auto:last-child img{
     margin-bottom: 0;
 }
