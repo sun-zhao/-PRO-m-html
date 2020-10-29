@@ -184,7 +184,7 @@ header p .num{
     background-image: url("../images/icon-plan.png");
     margin-right:0.1rem;
 }
-.icon-video{
+.icon-video,.video-js .vjs-big-play-button{
     width:0.56rem;
     height:0.56rem;
     background-image: url("../images/icon-video.png");
@@ -192,6 +192,20 @@ header p .num{
     top:50%;
     left:50%;
     margin:-0.28rem 0 0 -0.28rem;
+    z-index: 20;
+    background-size: cover;
+}
+.video-js .vjs-big-play-button{
+    width:0.76rem;
+    height:0.76rem;
+    margin:-0.38rem 0 0 -0.38rem;
+}
+.video-js .vjs-big-play-button{
+    background-color: transparent;
+    border:0;
+}
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before{
+    content: '';
 }
 .content{
     width: 100%;
@@ -494,11 +508,16 @@ footer{
 .star-info{
     margin:0 0.32rem;
     padding:0.54rem 0.05rem 0.6rem 0.05rem;
+    border-bottom: 1px solid #EFEDEC;
+}
+.star-info:last-of-type{
+    border-bottom:0;
 }
 .star-info-title{
     font-size:0.36rem;
     color:#111;
     line-height: 0.5rem;
+    margin-bottom:0.4rem;
 }
 .star-info-title:before{
     content: '';
@@ -510,6 +529,86 @@ footer{
     margin-right:0.12rem;
     vertical-align: -0.02rem;
 }
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid.col-3>div {
+    width:33.33%;
+}
+.star-personal{
+    color:#635F5D;
+    font-size:0.26rem;
+    line-height:0.36rem;
+}
+.star-personal>div{
+    margin-bottom:0.44rem;
+    text-indent: 0.05rem;
+}
+.star-personal>div:last-child{
+    margin: 0;
+}
+.star-personal>div p:last-child{
+    color: #FD780F;
+    font-size:0.28rem;
+    line-height: 0.4rem;
+    margin-top:0.1rem;
+    font-weight: 500;
+}
+.info-list{
+    font-size: 0.28rem;
+    line-height: 0.48rem;
+    color: #635F5D;
+}
+.info-list p{
+    padding-left:0.25rem;
+    position: relative;
+}
+.info-list p:before{
+    display: inline-block;
+    content: '•';
+    color: #FD780F;
+    width: 0.12rem;
+    height:0.12rem;
+    position: absolute;
+    left:0;
+}
+.photo-list img{
+    margin-bottom: 0.4rem;
+}
+.video-box{
+    margin-bottom: 0.4rem;
+}
+.video-box:last-child,.photo-list .img-auto:last-child img{
+    margin-bottom: 0;
+}
+.video-box,.video-js,.vjs-poster{
+    width: 100%;
+    height:3.84rem;
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
