@@ -280,14 +280,14 @@ footer{
     background: url("../images/Vector.png") no-repeat center right;
     background-size: 0.12rem;
 }
-.star-item .text-hidden,.VerticalNav .text-hidden{
+.star-item .text-hidden,.VerticalNav a{
     width:3.2rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top:0.08rem;
 }
-.VerticalNav .text-hidden{
+.VerticalNav a{
     width: 100%;
     margin-top: 0;
 }
