@@ -147,7 +147,7 @@ input, select {
 /*list*/
 header{
     width:100%;
-    height:2.5rem;
+    height:2rem;
     background-image: url("../images/top-bg.png");
     background-size: cover;
     color:#fff;
@@ -158,7 +158,7 @@ header p{
     font-size:0.28rem;
 }
 .list-title{
-    padding:0.5rem 0 0.2rem 0.45rem;
+    padding:0.3rem 0 0.2rem 0.45rem;
     font-size:0.36rem;
 }
 header p:last-child{
@@ -210,7 +210,7 @@ header p .num{
 .content{
     width: 100%;
     position: absolute;
-    top: 2.5rem;
+    top: 2rem;
     bottom:0.5rem;
 }
 footer{
